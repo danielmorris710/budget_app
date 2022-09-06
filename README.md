@@ -2,7 +2,7 @@
 
  Bill Manager is a frontend application I created using React for use with a backend called Bill Manager App API.
  
- You can see Bill Manager in action [here](). Please bear in mind that it may take a few moments to load the data from the API because it is deployed to Heroku and may be hibernating.
+ You can see Bill Manager in action [here](https://dam-bill-manager-app.herokuapp.com/). Please bear in mind that it may take a few moments to load the data from the API because it is deployed to Heroku and may be hibernating.
 
 --------------------------------------------
 ## User Stories
