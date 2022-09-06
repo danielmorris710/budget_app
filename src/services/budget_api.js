@@ -1,6 +1,6 @@
 // this file will be our endpoint routes
 import axios from 'axios'
-const baseURL ='http://localhost:3001/bills'
+const baseURL ='https://bill-manager-api.herokuapp.com/bills'
 
 export const getBills = () => {
     const URL = baseURL
