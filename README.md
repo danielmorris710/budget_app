@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Bill Manager App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ Bill Manager is a frontend application I created using React for use with a backend called Bill Manager App API.
+ 
+ You can see Bill Manager in action [here](https://tishana.github.io/jot-app/). Please bear in mind that it may take a few moments to load the data from the API because it is deployed to Heroku and may be hibernating.
 
-## Available Scripts
+--------------------------------------------
+## User Stories
 
-In the project directory, you can run:
+* I can create a bill (Create Bill).
+* I can view a list of bills (Read Bills).
+* I can edit a bill (Edit Bill).
+* I can view a bill (Read Bill).
+* I can delete a bill (Delete Bill).
 
-### `npm start`
+--------------------------------------------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used for Bill Manager:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* React.js
+* Axios
+* Bootstrap
+* React-Bootstrap
+* Heroku
 
-### `npm test`
+--------------------------------------------
+## How to Install Bill Manager locally:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Fork and clone this repository to your machine
+* Change into the new directory
+* Run npm install:
 
-### `npm run build`
+```
+$ npm i
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+* Open another terminal tab, and run npm run start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+$ npm run start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+* A browser window will open, and you're all set.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Seed the database locally :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+$ http://localhost:3001/seed
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+You will see bills on the main page. You can edit, delete, and create your own. 
 
-## Learn More
+--------------------------------------------
+## How to Seed Bill Manager App :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Seed the database:
+```
+$ /seed
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+--------------------------------------------
+## Challenges During this Project
 
-### Code Splitting
+My original goal for Bill Manager was to make this a fullstack application. Since I would like to teach myself other frontend applications, I decided to keep the frontend and backend separate, using the backend as an API for any frontend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I decided to use React because I wanted to know the framework well. It was part of the cirriculum at PerScholas and a requirement for Project 3. This project was my opportunity to create a React application from start to finish. 
 
-### Analyzing the Bundle Size
+I decided to build a backend application with Node, Mongoose, Cors, and Express, which you can view [here]().
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+--------------------------------------------
+## Future Plans for Bill Manager App API:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+A goal is to use this API for other separate front end applications, as it is now, but with full CRUD capabilities regardless of the front end application.
 
-### Advanced Configuration
+I want to make pop-ups to both add and edit bills.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I also want to add user authentication so anyone can log in and see their own bills. On top of that I would like to build out a way for people to send bills via email or SMS.
